@@ -1,0 +1,24 @@
+---
+layout: default
+---
+
+<article class="post container" itemscope itemtype="http://schema.org/BlogPosting">
+  <header class="post-header">
+    <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | jdate: "%d %b %Y" | replace: "0", "۰" | replace: "1", "۱" | replace: "2", "۲" | replace: "3", "۳" | replace: "4", "۴" | replace: "5", "۵" | replace: "6", "۶" | replace: "7", "۷" | replace: "8", "۸" | replace: "9", "۹" }}</time>
+			
+			
+			
+			{% if page.author %} &middot; <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}
+
+			{% if page.seo.date_modified %}<br>بروزرسانی در <time datetime="{{ page.seo.date_modified | date_to_xmlschema }}" itemprop="dateModified">{{ page.seo.date_modified | jdate: "%d %b %Y" | replace: "0", "۰" | replace: "1", "۱" | replace: "2", "۲" | replace: "3", "۳" | replace: "4", "۴" | replace: "5", "۵" | replace: "6", "۶" | replace: "7", "۷" | replace: "8", "۸" | replace: "9", "۹" }}</time>{% endif %}
+		</p>
+		
+    <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
+  </header>
+  <div class="post-content" itemprop="articleBody">
+    {{ content }}
+    {% include post-share.html %}
+  </div>
+</article>
+
+{% include comments.html %}

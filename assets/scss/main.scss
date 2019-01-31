@@ -1,0 +1,195 @@
+
+@import "bourbon/bourbon";
+
+@import "variables";
+@import "base/base";
+
+@import "layout";
+@import "syntax-highlighting";
+
+/* Ali Hardan Patch */
+// I also edited `_variables.scss` for font name, font size, and line height.
+@import "syntax-highlighting";
+
+
+
+.safe-social {
+	list-style-type: none;
+	text-align: center;
+	margin-left: 0;
+	margin-right: 0;
+	li {
+		display: inline;
+		margin-left: 5px;
+		margin-right: 5px;
+	}
+	.svg-icon {
+		transition: 0.5s;
+		fill: #000;
+	}
+	.twitter {
+		a:hover {
+			border-bottom: 2px solid #38A1F3 !important;
+			.svg-icon {
+				fill: #38A1F3;
+			}
+		}
+	}
+
+	.github {
+		a:hover {
+			border-bottom: 2px solid #FF0000 !important;
+			.svg-icon {
+				fill: #FF0000;
+			}
+		}
+	}
+
+	.telegram {
+		a:hover {
+			border-bottom: 2px solid #0088cc !important;
+			.svg-icon {
+				fill: #0088cc;
+			}
+		}
+	}
+
+	.rss {
+		a:hover {
+			border-bottom: 2px solid #f26522 !important;
+			.svg-icon {
+				fill: #f26522;
+			}
+		}
+	}
+
+	.envelope {
+		a:hover {
+			border-bottom: 2px solid #008000 !important;
+			.svg-icon {
+				fill: #008000;
+			}
+		}
+	}
+
+	.stackoverflow {
+		a:hover {
+			border-bottom: 2px solid #f48024 !important;
+			.svg-icon {
+				fill: #f48024;
+			}
+		}
+	}
+}
+
+
+.site-header{
+	border-bottom: 0;
+	background: #F5F5F5;
+}
+.logo {
+	float: right;
+}
+.navbar {
+	float: left;
+}
+img.profile {
+	border-radius: 50%;
+	border: 1px solid #000;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	background: #ecf0f1;
+}
+.intro {
+	.safe-social {
+		margin: 1.5em 0 0 0;
+	}
+	.lead {
+		text-align: center;
+		margin-top: 0.7em 0 0 0;
+	}
+	.divider {
+		margin: 1.3em 0 0 0;
+	}
+	.profile {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+.post-item {
+	.date-label {
+		margin-left: 0;
+		margin-right: 1em;
+		float: left;
+	}
+}
+.post-meta, .logo {
+	letter-spacing: normal;
+}
+
+blockquote{
+	padding: 1.5em 1.5em 1.5em 0; 
+	border-left: 0;
+	border-right: .75em solid #ccc;
+	p {
+		margin-bottom: .75em
+	}
+	p:last-child {
+		margin-bottom: 0;
+	}
+}
+code {
+	unicode-bidi: embed;
+}
+code, pre {
+	direction: ltr;
+}
+ul,ol,dl{margin-left:0;margin-right:1.2em;}
+//ol {list-style: persian}
+
+.page-title{
+	color: #333;
+}
+
+@media (max-width: 600px) {
+	.date-label {
+		float: right !important;
+		margin-right: -2px !important;
+		margin-left: 1em !important;
+	}
+}
+
+/* Fix firefox problem with form colors on dark-theme desktops */
+input[type="text"], input[type="email"], input[type="number"], textarea {
+	color:rgba(51,51,51,0.8);
+}
+
+form.contact {
+	input, textarea {
+		unicode-bidi: plaintext;
+	}
+}
+@media (min-width: 800px) {
+	form.contact {
+		width: 50%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.button {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 1em;
+	}
+}
+blockquote[dir="ltr"] {
+	padding: 1.5em 0 1.5em 1.5em; 
+	border-right: 0;
+	border-left: .75em solid #ccc;
+}
+
+
+.post-list, .page-content, .post-content {
+	line-height: 1.9;
+}
+

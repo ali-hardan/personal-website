@@ -52,12 +52,6 @@ social:
     - https://github.com/ali-hardan
     - https://stackoverflow.com/users/1552260/ali-hardan
 
-defaults:
-  - scope:
-      path: ""
-    values:
-      image: /assets/images/profile.png
-
 # End jekyll-seo-tag
 #
 # _includes/social.html configuration. from `minima` theme.
@@ -141,6 +135,10 @@ defaults:
     type: tags
   values:
     layout: tag
+- scope:
+    path: ""
+  values:
+    image: /assets/images/profile.png
 
 
 exclude: ["gulp", "node_modules", "bower", "bower_components", "config.rb", "src", "Gemfile", "Gemfile.lock", ".rvmrc", ".rbenv-version", "package.json", "gulpfile.js", "README.md", "Rakefile", "changelog.md", "script"]

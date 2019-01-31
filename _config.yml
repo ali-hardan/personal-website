@@ -101,7 +101,6 @@ plugins:
   #- slug : blog
     #title: Blog
 
-exclude: ["gulp", "node_modules", "bower", "bower_components", "config.rb", "src", "Gemfile", "Gemfile.lock", ".rvmrc", ".rbenv-version", "package.json", "gulpfile.js", "README.md", "Rakefile", "changelog.md", "script"]
 
 # HTML Compression
 # - http://jch.penibelst.de/
@@ -142,3 +141,7 @@ defaults:
     type: tags
   values:
     layout: tag
+
+
+exclude: ["gulp", "node_modules", "bower", "bower_components", "config.rb", "src", "Gemfile", "Gemfile.lock", ".rvmrc", ".rbenv-version", "package.json", "gulpfile.js", "README.md", "Rakefile", "changelog.md", "script"]
+include: ["_redirects"]

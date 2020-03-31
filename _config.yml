@@ -30,11 +30,11 @@ sass:
 
 # Jekyll-seo-tag and 
 author:
-  twitter: ali_hardan76
+  twitter: alihardan76
   name: علی هردان
 
 twitter:
-  username: ali_hardan76
+  username: alihardan76
   card: summary
 
 #facebook:
@@ -48,7 +48,7 @@ timezone: "Asia/Tehran"
 social:
   name: Ali Hardan
   links:
-    - https://twitter.com/ali_hardan76
+    - https://twitter.com/alihardan76
     - https://github.com/alihardan
     - https://stackoverflow.com/users/1552260/ali-hardan
 
@@ -56,7 +56,7 @@ social:
 #
 # _includes/social.html configuration. from `minima` theme.
 social_links:
-  twitter: ali_hardan76
+  twitter: alihardan76
   github:  alihardan
   rss: /fa/feed.xml
   stackoverflow: true

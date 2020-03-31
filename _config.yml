@@ -49,7 +49,7 @@ social:
   name: Ali Hardan
   links:
     - https://twitter.com/ali_hardan76
-    - https://github.com/ali-hardan
+    - https://github.com/alihardan
     - https://stackoverflow.com/users/1552260/ali-hardan
 
 # End jekyll-seo-tag
@@ -57,7 +57,7 @@ social:
 # _includes/social.html configuration. from `minima` theme.
 social_links:
   twitter: ali_hardan76
-  github:  ali-hardan
+  github:  alihardan
   rss: /fa/feed.xml
   stackoverflow: true
   # dribbble: jekyll

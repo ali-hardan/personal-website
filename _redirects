@@ -1,4 +1,7 @@
-/fa/hello-world	https://alihardan.github.io
-/fa/contact	https://alihardan.github.io
-/fa	https://alihardan.github.io
-/	https://alihardan.github.io
+/                 https://alihardan.github.io              301
+
+/fa               https://alihardan.github.io              301
+
+/fa/contact       https://alihardan.github.io              301
+
+/fa/hello-world   https://alihardan.github.io              301
